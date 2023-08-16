@@ -27,8 +27,17 @@ document.getElementById('btn-withdraw').addEventListener('click',function(){
     const withdrawfield=document.getElementById('withdraw-field');
     const NewWithdrawAmountString=withdrawfield.value ;
     const NewWithdrawAmount=parseFloat(NewWithdrawAmountString);
-    // console.log(NewWithdrawAmount);
 
+    withdrawfield.value='';
+
+    
+    if(isNaN(NewWithdrawAmount))
+    {
+        alert('please provide a valid number');
+        return;
+    }
+
+    
 
     //step-3:
     const withdrawTotaleLement=document.getElementById('withdraw-total');
@@ -53,6 +62,16 @@ document.getElementById('btn-withdraw').addEventListener('click',function(){
     const balanceTotalElement=document.getElementById('Balance-total');
     const previousBalanceTotalString=balanceTotalElement.innerText;
     const previousBalanceTotal=parseFloat(previousBalanceTotalString);
+
+
+    //if else
+    if(NewWithdrawAmount>previousBalanceTotal){
+        alert('Baap ar Bank a aTO tk nai')
+        return;
+    }
+
+
+
 
     // step-8
     const newBalanceTotal=previousBalanceTotal-NewWithdrawAmount;

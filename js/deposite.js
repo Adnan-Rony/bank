@@ -35,22 +35,8 @@
     //set the balance total
     balanceTotalElement.innerText=cureenBalanceTotal;
 
-            // // new
-            // document.getElementById('btn-withdraw').addEventListener('click',function(){
-
-            //     const WithdrawField=document.getElementById('withdraw-field');
-            //     const NewWithdrawamountString=WithdrawField.value;
-            //    const NewWithdrawamount=parseFloat(NewWithdrawamountString);
-               
-
-            //    const withdrawTotaleLement=document.getElementById('withdraw-total');
-            //    const previousWithdrawTotalString=withdrawTotaleLement.innerText;
-
-            //    const previousWithdrawTotal=parseFloat(previousWithdrawTotalString);
-            //    const CurrentWithdrawTotal=previousWithdrawTotal+NewWithdrawamount;
-
-            //    withdrawTotaleLement.innerText=CurrentWithdrawTotal;
-            // })
+           
 
 
     })
+
